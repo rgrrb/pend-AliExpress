@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    height: 50px;
+
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 10px;
+    height: 30px;
+    width: 900px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #000000;
+}
+
+.pesquisa img {
+    height: 20px;
+    width: 20px;
+}
+
+header .qrCode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 44px;
+    width: 152px;
+}
+
+.qrCode img {
+    height: 33px;
+    width: 33px;
+}
+
+.qrCode span {
+    font-size: small;
+    height: 48px;
+    width: 100px;
+
+}
+
+.websitelanguage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 44px;
+    width: 88px;
+}
+
+.websitelanguage img {
+    height: 16px;
+    width: 23px;
+
+}
+
+.websitelanguage span {
+    font-size: 12px;
+}
+
+.websitelanguage p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.websitelanguage .arrow {
+    height: 18px;
+    width: 18px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 164px;
+}
+
+.login span {
+    font-size: 12px;
+}
+
+.login p {
+    font-weight: 800;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    height: 44px;
+    width: 93px;
+}
+
+.carrinho img {
+    height: 32px;
+    width: 32px;
+}
+
+.carrinho p {
+    display: flex;
+    justify-content: center;
+    height: 16px;
+    width: 24px;
+    font-size: 12px;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+
+}
+
+header nav {
+    width: 100vw;
+    height: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+main {
+    height: 100%;
+}
