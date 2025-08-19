@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer type="module"></script>
     <title>AliExpress</title>
 </head>
 
@@ -23,7 +24,7 @@
             <div class="websitelanguage">
                 <img src="./img/brazilIcon.png" alt="">
                 <span>PT/<p>BRL</p></span>
-                <img src="./img/arrowlanguage.svg" class="arrow" alt="">
+                <img src="./img/arrow.svg" class="arrow" alt="">
 
             </div>
             <div class="login">
@@ -31,18 +32,59 @@
                 <span>Olá!<p>Entre / Registrar</p></span>
             </div>
             <div class="carrinho">
-                 <img src="./img/cart.svg" alt="">
-                    <p>0</p>
-                    <span>Carrinho</span>
+                <img src="./img/cart.svg" alt="">
+                <p>0</p>
+                <span>Carrinho</span>
             </div>
         </div>
         <nav>
             <div class="pesquisaCategoria">
-
+                <img src="./img/menu.png" class="menu" alt="">
+                <span>Todas as Categorias</span>
+                <img src="./img/arrow.svg" class="arrow" alt="">
             </div>
+            <span class="precoTitulo">A partir de R$7,99</span>
+            <ul>
+                <li>Do Brasil</li>
+                <li>Choice</li>
+                <li>Plus</li>
+                <li>SuperOfertas</li>
+                <li>Super Cliente</li>
+                <li>Casa e Jardim</li>
+                <li>Perucas e Apliques</li>
+
+            </ul>
+            <menu>
+                <span>Mais</span>
+                <img src="./img/arrow.svg" alt="">
+            </menu>
+            <div class="barra"></div>
+            <span class="vendaNoAliexpress">Vender no AliExpress</span>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="banner">
+            <div class="produto1">
+                <img src="./img/product.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Oferta 1 Compra</h1>
+                <span>Especial para novo Usuario</span>
+                <button>Compre Agora</button>
+                <div class="paginas"></div>
+            </div>
+            <div class="produto2">
+                <img src="./img/product2.png" alt="">
+            </div>
+        </section>
+        <section class="listaProdutos" id="listaProdutos">
+            <h1>Ofertas do dia</h1>
+            <div class="produtos" id="produtos">
+                
+            </div>
+
+        </section>
+    </main>
     <footer></footer>
 </body>
 
