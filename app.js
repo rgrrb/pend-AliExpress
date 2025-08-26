@@ -1,8 +1,8 @@
 'use strict'
 
-import products from './produtos_atualizados.json' with {type: 'json'} 
+import products from './produtos_atualizados.json' with {type: 'json'}
 
-function getInfoProducts(products){
+function getInfoProducts(products) {
 
     const listaProdutos = document.getElementById('listaProdutos')
 
@@ -20,7 +20,7 @@ function getInfoProducts(products){
 
     const precoAvaliacao = document.createElement('div')
 
-    precoAvaliacao.classList.add("precoAvaliacao") 
+    precoAvaliacao.classList.add("precoAvaliacao")
 
     const avaliacao = document.createElement('p')
 
@@ -38,15 +38,21 @@ function getInfoProducts(products){
     nome.textContent = products.nome
     preco.textContent = (`R$${products.preco}`)
     descricao.textContent = products.descricao
-    avaliacao.textContent = (`Avaliação ${products.classificacao*2}/10`)
+    avaliacao.textContent = (`Avaliação ${products.classificacao * 2}/10`)
     precoAvaliacao.append(preco, avaliacao)
-    
+
+    const cliqueNome = products.nome
+
 
     card.append(img, nome, precoAvaliacao, descricao)
     produtos.appendChild(card)
 
-    console.log("teste")
-}
+    card.addEventListener('click', () => {
 
+        alert(`Você clicou no produto : ${cliqueNome}`)
+
+    })
+
+}
 
 products.forEach(getInfoProducts)
