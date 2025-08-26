@@ -41,15 +41,12 @@ function getInfoProducts(products) {
     avaliacao.textContent = (`Avaliação ${products.classificacao * 2}/10`)
     precoAvaliacao.append(preco, avaliacao)
 
-    const cliqueNome = products.nome
-
-
     card.append(img, nome, precoAvaliacao, descricao)
     produtos.appendChild(card)
 
     card.addEventListener('click', () => {
 
-        alert(`Você clicou no produto : ${cliqueNome}`)
+        alert(`Você clicou no produto : ${products.nome}`)
 
     })
 
