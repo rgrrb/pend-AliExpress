@@ -17,8 +17,8 @@ ul {
 
 body {
     font-family: "Rubik", sans-serif;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 150px;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
@@ -251,7 +251,7 @@ main {
 }
 
 main .banner {
-    width: 100vw;
+    width: 100%;
     height: 350px;
     background-color: #FFE552;
     /* background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 229, 82, 1) 41%,
@@ -335,9 +335,10 @@ main .banner {
 .listaProdutos {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 30px;
     z-index: 100;
 }
@@ -352,15 +353,12 @@ main .banner {
 }
 
 .produtos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 1500px;
     width: 100%;
     gap: 100px;
-    padding: 10px;
-
+    padding: 25px;
 }
 
 .card {
@@ -374,10 +372,10 @@ main .banner {
 
 .card:hover {
     transition: 0.4s;
-    transform: scale(1.05);
+    transform: scale(1.09);
+    width: 320px;
     background-color: rgba(0, 0, 0, 0.074);
     border-radius: 33px 33px 33px 33px;
-    width: 320px;
     padding: 20px;
 
 }
